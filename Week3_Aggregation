@@ -1,0 +1,25 @@
+class Department {
+    String name;
+
+    Department(String name) {
+        this.name = name;
+    }
+}
+
+class Employee {
+    String empName;
+    Department department;
+
+    Employee(String empName, Department department) {
+        this.empName = empName;
+        this.department = department;
+    }
+}
+
+class AggregationDemo {
+    public static void main(String[] args) {
+        Department dept = new Department("Engineering");
+        Employee emp = new Employee("Alice", dept);
+        System.out.println(emp.empName + " works in " + emp.department.name);
+    }
+}
