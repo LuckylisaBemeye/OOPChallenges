@@ -1,0 +1,22 @@
+abstract class Animal {
+    abstract void speak();
+}
+
+class Dog extends Animal {
+    void speak() {
+        System.out.println("Woof");
+    }
+}
+
+class Cat extends Animal {
+    void speak() {
+        System.out.println("Meow");
+    }
+}
+
+class AbstractDemo {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        dog.speak();
+    }
+}
